@@ -12,6 +12,8 @@ app.get('/', (req: Request, res: Response) => {
   res.send('hello world');
 });
 
-app.listen(6000, () => {
-  console.log('listening on port 6000');
+const PORT = 6000;
+
+app.listen(PORT, () => {
+  console.log(`SR - Servidor corriendo en el puerto ${PORT} ! 👌`);
 });
